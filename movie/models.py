@@ -1,3 +1,7 @@
 from django.db import models
 
 # Create your models here.
+class movie(models.Model):
+    title=models.CharField(max_length=100)
+    genre=models.CharField(max_length=50)
+    budget=models.PositiveIntegerField()
